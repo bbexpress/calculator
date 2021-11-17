@@ -8,32 +8,33 @@
     <body>
         <table class="calculator">
             <tr>
-                <td colspan="3"><div id="total">0</div></td>
+                <td colspan="2"><div id="total">0</div></td>
                 <td><button class="btn btn-danger" type="submit" id = "clear" onclick=clearTotal()><h1>C</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "add" onclick=add()><h1>+</h1></button></td>
             </tr>
             <tr>
                 <td><button class="btn btn-primary" type="submit" id = "1" onclick=appendTotal(1)><h1>1</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "2" onclick=appendTotal(2)><h1>2</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "3" onclick=appendTotal(3)><h1>3</h1></button></td>
-                <td><button class="btn btn-primary" type="submit" id = "add" onclick=add()><h1>+</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "subtract" onclick=subtract()><h1>-</h1></button></td>
             </tr>
             <tr>
                 <td><button class="btn btn-primary" type="submit" id = "4" onclick=appendTotal(4)><h1>4</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "5" onclick=appendTotal(5)><h1>5</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "6" onclick=appendTotal(6)><h1>6</h1></button></td>
-                <td><button class="btn btn-primary" type="submit" id = "subtract" onclick=subtract()><h1>-</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "mupltiply" onclick=multiply()><h1>x</h1></button></td>
             </tr>
             <tr>
                 <td><button class="btn btn-primary" type="submit" id = "7" onclick=appendTotal(7)><h1>7</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "8" onclick=appendTotal(8)><h1>8</h1></button></td>
                 <td><button class="btn btn-primary" type="submit" id = "9" onclick=appendTotal(9)><h1>9</h1></button></td>
-                <td><button class="btn btn-primary" type="submit" id = "mupltiply" onclick=multiply()><h1>x</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "divide" onclick=divide()><h1>/</h1></button></td>
             </tr>
             <tr>
                 <td><button class="btn btn-primary" type="submit" id = "0" onclick=appendTotal(0)><h1>0</h1></button></td>
-                <td><button class="btn btn-primary" type="submit" id = "exponent" onclick=exponent()><h1>*</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "exponent" onclick=exponent()><h1>X^Y</h1></button></td>
+                <td><button class="btn btn-primary" type="submit" id = "." onclick="appendTotal('.')"><h1>.</h1></button></td>
                 <td><button class="btn btn-danger" type="submit" id = "equals" onclick=equals()><h1>=</h1></button></td>
-                <td><button class="btn btn-primary" type="submit" id = "divide" onclick=divide()><h1>/</h1></button></td>
             </tr>
         </table>
         

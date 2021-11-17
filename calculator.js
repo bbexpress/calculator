@@ -56,11 +56,11 @@ function equals(){
     switch(operator) {
         case "+":
             console.log('addition ' + currentInput + " " + previousInput);
-            currentInput = previousInput + currentInput;
+            currentInput = parseInt(previousInput) + parseInt(currentInput);
             console.log('new total: ' + currentInput);
             break;
         case "-":
-            currentInput = previousInput - currentInput;
+            currentInput = parseInt(previousInput) - parseInt(currentInput);
           break;
         case "x":
             currentInput = previousInput * currentInput;
