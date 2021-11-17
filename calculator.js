@@ -74,6 +74,7 @@ function equals(){
         default:
             console.log('default switch');
       }
+   
     document.getElementById("total").innerHTML = currentInput;
     operator = null;
 }
