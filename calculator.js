@@ -68,7 +68,7 @@ function equals(){
         case "/":
             currentInput = previousInput / currentInput;
             break;
-        case "*":
+        case "^":
             currentInput = previousInput ** currentInput;
             break;
         default:
